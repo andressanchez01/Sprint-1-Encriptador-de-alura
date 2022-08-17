@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <div class="contenedor">
+            <div class="header">
+                <img class="logo" src="imagenes/Vector.png" alt="logoAlura">
+                <h1 class="tittle">Bienvenido a el Encriptador de Alura</h1>
+            </div>
+            <div class="ingresarTexto">
+                <input type="text" id="textoEncriptar" class="text-input" placeholder="Ingrese el texto aqui...">
+            </div>
+            <div class="botones">
+                <p>Solo letras minusculas y sin acentos</p>
+                <button type="button" id="botonEncriptar">Encriptar</button>
+                <button type="button" id="botonDesencriptar">Desencriptar</button>
+            </div>
+            <div class="salidaTexto">
+                <img src="imagenes/dibujo.png" alt="dibujo joven" id="imagenDibujo">
+                <img src="imagenes/textoNoEncontrado.png" alt="No se ha encontrado texto" id="imagenSinTexto">
+                <textarea id="textoSalida" cols="30" rows="10"></textarea>
+                <button type="button" id="botonCopiar">Copiar</button>
+            </div>
+            <div class="piePagina">
+                <p>Creado por Andrés Sánchez</p>
+            </div>
+    </div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

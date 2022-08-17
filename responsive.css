@@ -1,0 +1,288 @@
+body{
+    background: #E5E5E5;
+}
+.contenedor{
+    background-color: #E5E5E5;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+}
+.contenedor >*{
+    background-color: #E5E5E5;
+    text-align: center;
+}
+.header{
+    margin-top: 5%;
+    grid-column: 1 / 5;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+.tittle{
+    color:#0a3871;
+}
+.ingresarTexto{
+    grid-column: 1 / 4;
+    margin-left: 15%;
+}
+.text-input{
+    float: left;
+    margin-left: 10%;
+    margin-top: 10%;
+    width: 80%;
+    height: 70%;
+    color: #0a3871;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: #E5E5E5;
+    margin-bottom: 30%;
+    
+}
+.botones{
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px;
+}
+.botones p{
+    grid-column: 1 / 3;
+    text-align: center;
+    display: block;
+    margin-top: 8%;
+    color:#0a3871;
+}
+#botonEncriptar{
+    padding: 24px;
+    width: 75%;
+    height: 20%;
+    border-radius: 24px;
+    margin-left: 25%;
+    background: #0a3871;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+#botonEncriptar:hover{
+    transform: scale(1.05);
+}
+#botonDesencriptar{
+    padding: 24px;
+    width: 75%;
+    height: 20%;
+    border-radius: 24px;
+    margin-left: 25%;
+    background: #E5E5E5;
+    font-size: 20px;
+    color: #0a3871;
+    cursor: pointer;
+    
+}
+
+#botonDesencriptar:hover{
+    transform: scale(1.05);
+}
+.salidaTexto{
+    grid-column: 4 / 5;
+    grid-row: 2 / 4;
+    width: 70%;
+    height: 600px;
+    border-radius: 24px;
+    background: white;
+    margin-left: 15%;
+}
+#botonCopiar{
+    padding: 24px;
+    width: 50%;
+    height: 10%;
+    border-radius: 24px;
+    margin-left: 25%;
+    margin-top: 90%;
+    background: #d8dfe8;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+    color: #0a3871;
+}
+#botonCopiar:hover{
+    transform: scale(1.05);
+}
+#imagenDibujo{
+    margin-top: 1%;
+    margin-left: 15%;
+    width: 80%;
+    height: auto;
+    display: block;
+}
+#imagenSinTexto{
+    display: flex;
+}
+#textoSalida{
+    float: left;
+    margin-left: 10%;
+    color: #0a3871;
+    width: 60%;
+    height: auto;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+.footer{
+    grid-column: 1 / 5;
+    grid-row: 4 / 5;
+}
+@media screen and (max-width:820px) {
+    .contenedor >*{
+
+        grid-column: 1 / span 4;
+    }
+    .header{
+        margin-top: 5%;
+    }
+    .ingresarTexto{
+        grid-column: 1 / 5;
+        margin: 0;
+    }
+    .botones{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px;
+    }
+    #botonEncriptar{
+        padding: 24px;
+        width: 80%;
+        border-radius: 24px;
+        cursor: pointer;
+        margin: auto;
+        font-size: small;
+    }
+    #botonDesencriptar{
+        padding: 24px;
+        border-radius: 24px;
+        width: 80%;
+        margin: auto;
+        cursor: pointer;
+        font-size: small;
+    }
+    .salidaTexto{
+        grid-row: 4 / 5;
+        width: 70%;
+        height: auto;
+        border-radius: 24px;
+        background: white;
+        margin-left: 15%;
+    }
+    #imagenDibujo{
+        display: flex;
+    }
+    #imagenSinTexto{
+        display: inline;
+        width: 70%;
+    }
+    #textoSalida{
+        float: left;
+        margin-left: 20%;
+        color: #0a3871;
+        width: 60%;
+        height: auto;
+        border: none;
+        outline: none;
+        font-size: 15px;
+    }
+    
+    #botonCopiar{
+        padding: 24px;
+        width: 50%;
+        height: 10%;
+        border-radius: 24px;
+        margin-left: 25%;
+        background: #d8dfe8;
+        display: none;
+        cursor: pointer;
+    }
+    .footer{
+        grid-column: 1 / 5;
+        grid-row: 5 / 6;
+    }
+    .footer p{
+        color: black;
+    }
+    
+}
+@media screen and (max-width:375px) {
+    .contenedor >*{
+
+        grid-column: 1 / span 4;
+    }
+    .header{
+        margin-top: 5%;
+    }
+    .ingresarTexto{
+        grid-column: 1 / 5;
+        margin: 0;
+    }
+    .botones{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 100px;
+    }
+    #botonEncriptar{
+        padding: 24px;
+        width: 80%;
+        border-radius: 24px;
+        cursor: pointer;
+        margin: auto;
+        font-size: small;
+    }
+    #botonDesencriptar{
+        padding: 24px;
+        border-radius: 24px;
+        width: 80%;
+        margin: auto;
+        cursor: pointer;
+        font-size: small;
+    }
+    .salidaTexto{
+        grid-row: 4 / 5;
+        width: 70%;
+        height: auto;
+        border-radius: 24px;
+        background: white;
+        margin-left: 15%;
+    }
+    #imagenDibujo{
+        display: flex;
+    }
+    #imagenSinTexto{
+        display: inline;
+        width: 70%;
+    }
+    #textoSalida{
+        float: left;
+        margin-left: 20%;
+        color: #0a3871;
+        width: 60%;
+        height: auto;
+        border: none;
+        outline: none;
+        font-size: 15px;
+    }
+    
+    #botonCopiar{
+        padding: 24px;
+        width: 50%;
+        height: 10%;
+        border-radius: 24px;
+        margin-left: 25%;
+        background: #d8dfe8;
+        display: none;
+        cursor: pointer;
+    }
+    
+    .footer{
+        grid-column: 1 / 5;
+        grid-row: 5 / 6;
+        color: black;
+    }
+}
